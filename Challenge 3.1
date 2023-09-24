@@ -1,0 +1,23 @@
+"""
+write a function called linear_search_product that take the list of products and target product
+name as input. The function should perform a linear search to find the target product in the list and
+return list of indices of all occurrences of the product is found, or and empty list is the product is not
+found.
+"""
+
+
+def linearSearchProduct(productList, targetProduct):
+  indices = []
+
+  for index, product in enumerate(productList):
+    if product == targetProduct:
+      indices.append(index)
+
+  return indices
+
+
+# Example usage:
+product = ["shoes", "boot", "loafer", "shoes", "sandal", "shoes"]
+target = "shoes"
+result = linearSearchProduct(product, target)
+print(result)
